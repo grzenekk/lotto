@@ -2,7 +2,13 @@
 change .env.example to .env
 docker-compose up -d
 
-.\bin\build.sh
+RUN 
+.\bin\build.sh or .\bin\win-build.sh
+
+## first run
+run in command line 
+docker-compose exec scheduler php artisan schedule:test 
+select 0 and enter
 
 ## example
 
